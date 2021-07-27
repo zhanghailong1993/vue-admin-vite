@@ -8,6 +8,7 @@ import "./style/index.scss";
 // 导入字体图标
 import "./assets/iconfont/iconfont.js";
 import "./assets/iconfont/iconfont.css";
+import 'font-awesome/css/font-awesome.css';
 
 const app = createApp(App)
 
