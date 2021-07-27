@@ -7,7 +7,7 @@
       to="/"
     >
       <i class="fa fa-optin-monster"></i>
-      <h1 class="sidebar-title">Pure Admin1</h1>
+      <h1 class="sidebar-title">Pure Admin</h1>
     </router-link>
     <router-link
       v-else
@@ -16,7 +16,7 @@
       to="/"
     >
       <i class="fa fa-optin-monster"></i>
-      <h1 class="sidebar-title">Pure Admin2</h1>
+      <h1 class="sidebar-title">Pure Admin</h1>
     </router-link>
   </div>
 </template>
