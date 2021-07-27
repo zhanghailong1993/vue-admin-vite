@@ -1,0 +1,50 @@
+@mixin merge-style (
+  // 菜单选中后字体样式
+  $subMenuActiveText,
+  //菜单背景
+  $menuBg,
+  // 鼠标覆盖菜单时的背景
+  $menuHover,
+  // 子菜单背景
+  $subMenuBg,
+  // 鼠标覆盖子菜单时的背景
+  $subMenuHover
+) {
+  $menuText: #7a80b4;
+  $menuActiveText: #7a80b4;
+  $sideBarWidth: 210px;
+
+  .main-container {
+    position: relative;
+    min-height: 100%;
+    margin-left: $sideBarWidth;
+  }
+  .sidebar-container {
+    width: $sideBarWidth !important;
+    background-color: $menuBg;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1001;
+    overflow: hidden;
+    box-shadow: 0 0 1px #888888;
+  }
+}
+// 亮色主题
+body[data-theme="light"] {
+  $subMenuActiveText: #409eff;
+  $menuBg: #fff;
+  $menuHover: #e0ebf6;
+  $subMenuBg: #fff;
+  $subMenuHover: #e0ebf6;
+
+  @include merge-style(
+    $subMenuActiveText,
+    $menuBg,
+    $menuHover,
+    $subMenuBg,
+    $subMenuHover
+  );
+}
