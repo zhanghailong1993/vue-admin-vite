@@ -26,3 +26,14 @@ export default defineComponent({
     }
 })
 </script>
+<style lang="scss" scoped>
+.hamburger {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    &.is-active {
+        transform: rotate(180deg);
+    }
+}
+</style>

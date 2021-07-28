@@ -6,6 +6,7 @@
     "strict": true,
     "jsx": "preserve",
     "moduleResolution": "node",
+    "resolveJsonModule": true, // 包含导入的模块。json的扩展
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "sourceMap": true,
@@ -27,6 +28,7 @@
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "**/*.js"
   ]
 }

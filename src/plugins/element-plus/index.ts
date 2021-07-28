@@ -12,7 +12,14 @@ import {
   ElMenu,
   ElSubmenu,
   ElMenuItem,
-  ElScrollbar
+  ElScrollbar,
+  ElBreadcrumb,
+  ElBreadcrumbItem,
+  ElDropdown,
+  ElDropdownMenu,
+  ElDropdownItem,
+  ElCard,
+  ElSkeleton
 } from 'element-plus';
 
 // 如果要使用.scss样式文件，则需要引入base.scss文件
@@ -25,7 +32,14 @@ const components = [
   ElMenu,
   ElSubmenu,
   ElMenuItem,
-  ElScrollbar
+  ElScrollbar,
+  ElBreadcrumb,
+  ElBreadcrumbItem,
+  ElDropdown,
+  ElDropdownMenu,
+  ElDropdownItem,
+  ElCard,
+  ElSkeleton
 ];
 
 const plugins = [
