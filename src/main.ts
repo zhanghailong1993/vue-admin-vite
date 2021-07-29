@@ -4,7 +4,7 @@ import router from './router'
 // import * as Sentry from '@sentry/browser'
 // import * as Integrations from '@sentry/integrations'
 import { useElementPlus } from './plugins/element-plus';
-// import { setupStore } from '/@/store'
+import { setupStore } from '/@/store'
 
 // 导入公共样式
 import "./style/index.scss";
@@ -21,7 +21,7 @@ const app = createApp(App)
 // });
 
 useElementPlus(app)
-// setupStore(app)
+setupStore(app)
 app.use(router)
 
 app.mount('#app')

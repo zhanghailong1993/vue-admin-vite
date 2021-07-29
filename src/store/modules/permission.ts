@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { store } from "/@/store";
+
 import { constantRoutesArr, accending } from "/@/router/index";
 // import { getAsyncRoutes } from "/@/api/routes";
 
@@ -22,6 +22,6 @@ export const usePermissionStore = defineStore({
   }
 })
 
-export function usePermissionStoreHook () {
-  return usePermissionStore(store)
+export function usePermissionStoreHook() {
+  return usePermissionStore()
 }

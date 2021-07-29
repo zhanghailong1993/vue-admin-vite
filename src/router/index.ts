@@ -3,7 +3,7 @@ import NProgress from "../utils/progress"
 import homeRouter from './modules/home'
 import flowChartRouter from './modules/flowchart'
 import errorRouter from "./modules/error"
-import { usePermissionStoreHook } from "/@/store/modules/permission"
+// import { usePermissionStore } from "/@/store/modules/permission"
 import { getAsyncRoutes } from "/@/api/routes"
 
 const constantRoutes: Array<any> = [
@@ -23,9 +23,9 @@ export const initRouter = () => {
   return new Promise(resolve => {
     getAsyncRoutes({
       name: 'test'
-    }).then(({ info }) => {
+    }).then((res) => {
       debugger
-      usePermissionStoreHook().changeSetting(info);
+      // usePermissionStore().changeSetting(info);
     })
   })
 }
@@ -41,6 +41,7 @@ const router = createRouter({
 router.beforeEach((to, _from, next) => {
   NProgress.start()
   // if (usePermissionStoreHook().wholeRoutes.length === 0) {
+  //   debugger
   //   initRouter()
   // }
   next()
