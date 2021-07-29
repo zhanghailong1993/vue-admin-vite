@@ -24,7 +24,7 @@
 <script lang="ts" setup>
 import { ref, computed, nextTick, onMounted } from 'vue'
 import echarts from '/@/plugins/echarts'
-import timeArrs from '/@/mock/cityTimeList.json'
+import timeArrs from '../../mock/cityTimeList.json'
 import { useEventListener, useTimeoutFn, tryOnUnmounted } from '@vueuse/core'
 
 let brokenLine: any = null

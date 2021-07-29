@@ -24,7 +24,8 @@
     "src/**/*.vue",
     "types/**/*.d.ts",
     "types/**/*.ts",
-    "types/shims-vue.d.ts"
+    "types/shims-vue.d.ts",
+    "mock/asyncRoutes.ts"
   ],
   "exclude": [
     "node_modules",
