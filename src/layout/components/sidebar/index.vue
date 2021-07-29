@@ -9,7 +9,7 @@
       :collapse-transition="true"
     >
       <sidebar-item
-        v-for="route in data.routeStore"
+        v-for="route in routeStore.wholeRoutes"
         :key="route.path"
         :item="route"
         :base-path="route.path"
@@ -21,10 +21,14 @@
 import Logo from './Logo.vue'
 import SidebarItem from "./SidebarItem.vue"
 import { ref, reactive, toRefs } from 'vue'
+import { usePermissionStoreHook } from "/@/store/modules/permission";
+
 const isCollapse = ref(false)
 const data = reactive({
   routeStore: [{
     path: '/home'
   }]
 })
+
+const routeStore = usePermissionStoreHook()
 </script>
