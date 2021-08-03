@@ -19,7 +19,10 @@ import {
   ElDropdownMenu,
   ElDropdownItem,
   ElCard,
-  ElSkeleton
+  ElSkeleton,
+  ElForm,
+  ElFormItem,
+  ElInput
 } from 'element-plus';
 
 // 如果要使用.scss样式文件，则需要引入base.scss文件
@@ -39,7 +42,10 @@ const components = [
   ElDropdownMenu,
   ElDropdownItem,
   ElCard,
-  ElSkeleton
+  ElSkeleton,
+  ElForm,
+  ElFormItem,
+  ElInput
 ];
 
 const plugins = [
